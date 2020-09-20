@@ -3,6 +3,10 @@
 if [[ -d "export PATH=$PATH:~/Documents/Projet_git/python-crypto/bin" ]]; then
 	echo "ce PATH existe deja"
 else
+	mkdir tocrypt
+	mkdir crypted
+	mkdir todecrypt
+	mkdir decrypted
 	echo "export PATH=$PATH:~/Documents/Projet_git/python-crypto/bin">>~/.bashrc
 	cp -r ~/Documents/Projet_git/python-crypto/bin  ~
 	echo "export PATH=$PATH:~/bin">>~/.bashrc
