@@ -10,7 +10,7 @@ key = RSA.generate(1024)
 
 #dechiffrage
 public_key = key.publickey()
-enc_data = public_key.encrypt(b"""Decryptage""",32)
+enc_data = public_key.encrypt(*.pem,32)
 
 x = key.decrypt(enc_data)
 x = x.decode('utf-8')

@@ -10,7 +10,7 @@ key = RSA.generate(1024)
 
 #chiffrage
 public_key = key.publickey()
-enc_data = public_key.encrypt(b"""text be tsis otrizan""", 32)
+enc_data = public_key.encrypt(*.txt, 32)
 
 k = key.exportKey('PEM')
 p = key.publickey().exportKey('PEM')
